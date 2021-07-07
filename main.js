@@ -9,12 +9,14 @@ async function getISS() {
 	//console.log(data.longitude);
 	//
 	// below = seperates variables
-	const { latitude, longitude } = data;
+	const { latitude, longitude, altitude, velocity } = data;
 	//console.log(latitude);
 	//console.log(longitude);
 	//display variables
 	document.getElementById('lat').textContent = latitude;
 	document.getElementById('lon').textContent = longitude;
+	document.getElementById('alt').textContent = altitude;
+	document.getElementById('vel').textContent = velocity;
 }
 
 getISS();
