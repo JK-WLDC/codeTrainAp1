@@ -5,21 +5,37 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<script src="main.js"></script>
-		<title>Document</title>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<title>ISS Location on a map</title>
 	</head>
 	<body>
 		<div>
-			<h1>Where the ISS IS AT YO!</h1>
+			<h1>Where is teh ISS? 🙄</h1>
 			<br />
 		</div>
 		<div>
 			<p>
-				Lat:<span id="lat"></span><br />
-				Lon:<span id="lon"></span><br />
-				Alt:<span id="alt"></span><br />
-				Vel:<span id="vel"></span>
+				Lat: <span id="lat"></span>°<br />
+				Lon: <span id="lon"></span>°<br />
+				Alt: <span id="alt"></span>km<br />
+				Vel: <span id="vel"></span>km/h
 			</p>
 		</div>
+		<br />
+		<div id="mapid"></div>
 	</body>
+	<!-- Make sure you put this AFTER Leaflet's CSS -->
+	<script
+		src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""
+	></script>
+	<script src="main.js"></script>
 </html>

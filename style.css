@@ -8,3 +8,7 @@ body {
 	padding: 2%;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+#mapid {
+	height: 300px;
+}
