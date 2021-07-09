@@ -34,8 +34,8 @@ async function getISS() {
 	//display variables
 	document.getElementById('lat').textContent = latitude.toFixed(2);
 	document.getElementById('lon').textContent = longitude.toFixed(2);
-	document.getElementById('alt').textContent = altitude;
-	document.getElementById('vel').textContent = velocity;
+	document.getElementById('alt').textContent = altitude.toFixed(2);
+	document.getElementById('vel').textContent = velocity.toFixed(2);
 }
 
 getISS();
